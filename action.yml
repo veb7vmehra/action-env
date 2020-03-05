@@ -1,0 +1,10 @@
+  name: 'action-env'
+  description: 'Github Action to create a .env file with Github Secrets'
+  author: 'Vaibhav Mehra'
+  inputs:
+    file_name:
+      description: 'The filename for the envfile'
+      default: '.env'
+  runs:
+    using: 'docker'
+    image: 'Dockerfile'
